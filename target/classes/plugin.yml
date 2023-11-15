@@ -1,0 +1,12 @@
+name: Profiles
+version: '1.0'
+main: lt.tomexas.profiles.Main
+api-version: 1.19
+depend:
+  - SuperiorSkyblock2
+  - PlaceholderAPI
+commands:
+  profile:
+    aliases:
+      - p
+    description: Shows player profile

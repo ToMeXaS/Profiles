@@ -1,0 +1,86 @@
+config:
+  punishment_tabs:
+    chat:
+      1:
+        text: "1"
+        command: ""
+      2:
+        text: "2"
+        command: ""
+      3:
+        text: "3"
+        command: ""
+      4:
+        text: "4"
+        command: ""
+      5:
+        text: "5"
+        command: ""
+      6:
+        text: "6"
+        command: ""
+      7:
+        text: "7"
+        command: ""
+      8:
+        text: "8"
+        command: ""
+      9:
+        text: "9"
+        command: ""
+    behavior:
+      1:
+        text: "1"
+        command: ""
+      2:
+        text: "2"
+        command: ""
+      3:
+        text: "3"
+        command: ""
+      4:
+        text: "4"
+        command: ""
+      5:
+        text: "5"
+        command: ""
+      6:
+        text: "6"
+        command: ""
+      7:
+        text: "7"
+        command: ""
+      8:
+        text: "8"
+        command: ""
+      9:
+        text: "9"
+        command: ""
+    mods:
+      1:
+        text: "1"
+        command: ""
+      2:
+        text: "2"
+        command: ""
+      3:
+        text: "3"
+        command: ""
+      4:
+        text: "4"
+        command: ""
+      5:
+        text: "5"
+        command: ""
+      6:
+        text: "6"
+        command: ""
+      7:
+        text: "7"
+        command: ""
+      8:
+        text: "8"
+        command: ""
+      9:
+        text: "9"
+        command: ""
