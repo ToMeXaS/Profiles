@@ -1,86 +1,260 @@
-config:
-  punishment_tabs:
-    chat:
-      1:
-        text: "1"
-        command: ""
-      2:
-        text: "2"
-        command: ""
-      3:
-        text: "3"
-        command: ""
-      4:
-        text: "4"
-        command: ""
-      5:
-        text: "5"
-        command: ""
-      6:
-        text: "6"
-        command: ""
-      7:
-        text: "7"
-        command: ""
-      8:
-        text: "8"
-        command: ""
-      9:
-        text: "9"
-        command: ""
-    behavior:
-      1:
-        text: "1"
-        command: ""
-      2:
-        text: "2"
-        command: ""
-      3:
-        text: "3"
-        command: ""
-      4:
-        text: "4"
-        command: ""
-      5:
-        text: "5"
-        command: ""
-      6:
-        text: "6"
-        command: ""
-      7:
-        text: "7"
-        command: ""
-      8:
-        text: "8"
-        command: ""
-      9:
-        text: "9"
-        command: ""
-    mods:
-      1:
-        text: "1"
-        command: ""
-      2:
-        text: "2"
-        command: ""
-      3:
-        text: "3"
-        command: ""
-      4:
-        text: "4"
-        command: ""
-      5:
-        text: "5"
-        command: ""
-      6:
-        text: "6"
-        command: ""
-      7:
-        text: "7"
-        command: ""
-      8:
-        text: "8"
-        command: ""
-      9:
-        text: "9"
-        command: ""
+gui:
+  is_home_button: "&7Teleport to your island"
+  is_visit_button: "&7Visit the island"
+  friend_list_button: "&8Friend List (Coming soon)"
+  player_vault_button: "&8Player Vaults (Coming soon)"
+  duel_button: "&8Duels (Coming soon)"
+  discord_button: "&a%discord_tag%"
+  discord_not_linked_button: "&7Discord account not linked"
+  punish_button: "&7Punish this player"
+  invsee_button: "&7Check the players inventory"
+  no_rule_created: "&cNO RULE CREATED"
+  player_info_button:
+    - "&3Player Information:"
+    - " &8■ &bBalance: &f%vault_eco_balance_formatted%"
+    - " &8■ &bJoined: &f%player_first_join_date%"
+    - "&c"
+    - "&3Skills Information:"
+    - " &8■ &bAverage Level: &f%ecoskills_average_skill_level%"
+    - " &8■ &bTotal Level: &f%ecoskills_total_skill_level%"
+    - "&c"
+    - " &8■ &bMining %ecoskills_mining_numeral%: &f%ecoskills_mining_current_xp%&8/&f%ecoskills_mining_required_xp% &7[%ecoskills_mining_percentage_progress%%]"
+    - " &8■ &bFishing %ecoskills_fishing_numeral%: &f%ecoskills_fishing_current_xp%&8/&f%ecoskills_fishing_required_xp% &7[%ecoskills_fishing_percentage_progress%%]"
+    - " &8■ &bCombat %ecoskills_combat_numeral%: &f%ecoskills_combat_current_xp%&8/&f%ecoskills_combat_required_xp% &7[%ecoskills_combat_percentage_progress%%]"
+    - " &8■ &bFarming %ecoskills_farming_numeral%: &f%ecoskills_farming_current_xp%&8/&f%ecoskills_farming_required_xp% &7[%ecoskills_farming_percentage_progress%%]"
+    - "&c"
+  teleport_button:
+    - "&f%img_mouse_left_click_icon% &7Teleport to player"
+    - "&f%img_mouse_right_click_icon% &7Teleport player to you"
+    - "&c"
+    - "&f%img_key_shift_icon% &7+%img_offset_2%&f%img_mouse_left_click_icon% &7Force teleport to player"
+    - "&f%img_key_shift_icon% &7+%img_offset_2%&f%img_mouse_right_click_icon% &7Force teleport player to you"
+
+commands:
+  is_visit: "is visit %player_name%"
+  is_home: "is home"
+  tp: "tp %player_name%"
+  tphere: "tphere %player_name%"
+  #Lets you telepoyrt to player even if /tptoggle is enabled
+  tpo: "tpo %player_name%"
+  #Lets you teleport player to you even if /tptoggle is enabled
+  tpohere: "tpohere %player_name%"
+  invsee: "invsee %player_name%"
+
+progress_bars:
+  mining:
+    current_xp: "%ecoskills_mining_current_xp%"
+    required_xp: "%ecoskills_mining_required_xp%"
+  fishing:
+    current_xp: "%ecoskills_fishing_current_xp%"
+    required_xp: "%ecoskills_fishing_required_xp%"
+  combat:
+    current_xp: "%ecoskills_combat_current_xp%"
+    required_xp: "%ecoskills_combat_required_xp%"
+  farming:
+    current_xp: "%ecoskills_farming_current_xp%"
+    required_xp: "%ecoskills_farming_required_xp%"
+
+
+punishment_tabs:
+  chat:
+    button_text:
+      - "&7Punish &f%player_name% &7for"
+      - "&7violating the rules of the chat"
+    1:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: ""
+    2:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    3:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    4:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: ""
+    5:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    6:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: ""
+    7:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    8:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    9:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+  behavior:
+    button_text:
+      - "&7Punish &f%player_name% &7for"
+      - "&7inappropriate behavior"
+    1:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    2:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    3:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    4:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    5:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    6:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    7:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    8:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    9:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+  mods:
+    button_text:
+      - "&7Punish &f%player_name% &7for"
+      - "&7using not allowed client modifications"
+    1:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    2:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    3:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    4:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    5:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    6:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    7:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    8:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
+    9:
+      text:
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - "&7Lorem ipsum krw"
+        - ""
+      command: "say test"
